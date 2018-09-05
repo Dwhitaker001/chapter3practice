@@ -1,24 +1,123 @@
-This is free and unencumbered software released into the public domain.
+"""
+    Complete all of the TODO directions
+    The number next to the TODO represents the chapter
+    and section that explain the required code
+    Your file should compile error free
+    Submit your completed file
+"""
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+# TODO 3. 1 Relational Operators
+# 1. Write a statement using the variables below and a
+#   and a greater than sign that will evaluate to true.
+# 2. Write a statement using the variables below that
+#    compares two of the variables to see if they are equal
+# 3. Write a statement using the variables below that compares
+#    two of the variables below to see if they are not equal
+# 4. Write a statement using the variables below that uses
+#    the less than or equal to operator
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+# variables
+a = 6
+b = 8
+c = 5
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+# TODO 3.2 the if else statement
+# add code below to determine if age is greater than or equal to
+# 18. Depending on the answer, display the appropriate statement:
+# "You are old enough to vote" or "You are not old enough to vote"
+# Use the if-else structure
 
-For more information, please refer to <http://unlicense.org>
+age = int(input("How old are you? "))
+if 'age' > '18':
+    print('You are old enough to vote.')
+else:
+    print('You are not old enough to vote.')
+
+# TODO 3.3 comparing strings
+# complete the code below, if the user input matches the password
+# string, display "that is correct" otherwise display "that is not
+# correct"
+
+password = "narwhals"
+user_password = input("Please enter the password:  ")
+if password == 'narwhals':
+    print('That is correct.')
+else:
+    print('This is the wrong password.')
+
+# TODO 3.4 if - elif - else
+# write code that accepts a number from between 1 and 5 from the user
+# and returns a roman numeral for that number. If the number entered is
+# not between 1 and 5, have the else statement print "That is not a
+# valid number"
+
+number = int(input("Please enter a number between 1 and 5: "))
+if number == 1:
+    print('I')
+elif number == 2:
+    print('II')
+elif number == 3:
+    print('III')
+elif number == 4:
+    print('IV')
+elif number == 5:
+    print('V')
+else:
+    print('That is not a valid')
+
+# TODO 3.5 a series of conditions
+# Buffet prices are based on the persons age. If the person is a senior
+# citizen (62 or over) , the charge is $9.89. If the person is age 12-
+# 61, the charge is $12.89. If it is a child of under age 3, they eat
+# for free. If the child is between 4 and 12 they are charged $0.99 for
+# each year of age. Complete the program below.
+
+customer_age = int(input("How old is the customer?   "))
+cost = 0  # initializing cost, assign the correct price to this variable
+
+
+# complete the program here
+cost_62 = 9.89
+cost_12 = 12.89
+cost_3 = 0
+cost_4 = 0.99
+
+
+if customer_age > 62:
+    print(cost_62)
+    cost = cost_62
+else:
+    if customer_age < 61:
+        print(cost_12)
+        cost = cost_12
+    else:
+        if customer_age < 3:
+            print(cost_3)
+            cost = cost_3
+        else:
+            if customer_age < 12:
+                print(cost_4)
+                cost = cost_4
+
+
+# output, correctly formatted:
+print("Your cost for a customer who is " + str(customer_age) + " years old")
+print("is $" + format(cost, ",.2f"))
+
+# TODO 3.5 Logical Operators
+# Using the variables below
+# 1.) write a statement using the and operator that will evaluate to true
+# 2.) write a statement using the or operator that will evaluate to true
+# 3.) write a statement using the not operator that will evaluate to true
+
+d = 10
+e = 10
+f = 12
+
+# TODO 3.6 Boolean variable
+# You are programming a baby doll. If they baby doll is tired, it will close its eyes
+# if it is hungry, it will cry. You will print  "Eyes open" or "Eyes closed" depending
+# on the tired value. You will print "Crying" or "quiet" depending on the hungry variable
+
+tired = True
+hungry = False
