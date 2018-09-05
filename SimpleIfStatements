@@ -19,3 +19,5 @@ elif number == 6:
     print('Saturday')
 elif number == 7:
     print('Sunday')
+else:
+    print('That was not a valid number.')
