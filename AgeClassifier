@@ -1,0 +1,13 @@
+# Write a program that asks the user to enter a person's age. The program should display a message indicating
+# whether the person is an infant, a child, a teenager, or an adult.
+
+age = int(input("Please enter the individual's age:"))
+
+if age <= 1:
+    print('The individual is a infant.')
+elif age <= 13:
+    print('The individual is a child.')
+elif age <= 20:
+    print('The individual is a teenager.')
+elif age >= 20:
+    print('The individual is a adult.')
