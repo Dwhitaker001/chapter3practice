@@ -28,7 +28,7 @@ c = 5
 # Use the if-else structure
 
 age = int(input("How old are you? "))
-if 'age' > '18':
+if age > 17:
     print('You are old enough to vote.')
 else:
     print('You are not old enough to vote.')
@@ -82,23 +82,22 @@ cost_12 = 12.89
 cost_3 = 0
 cost_4 = 0.99
 
-
 if customer_age > 62:
     print(cost_62)
     cost = cost_62
 else:
-    if customer_age < 61:
-        print(cost_12)
-        cost = cost_12
+    if customer_age < 3:
+        print(cost_3)
+        cost = cost_3
     else:
-        if customer_age < 3:
-            print(cost_3)
-            cost = cost_3
+        if customer_age < 12:
+            print(cost_4)
+            cost = cost_4
         else:
-            if customer_age < 12:
-                print(cost_4)
-                cost = cost_4
-
+            if customer_age < 61:
+                print(cost_12)
+                cost = cost_12
+        
 
 # output, correctly formatted:
 print("Your cost for a customer who is " + str(customer_age) + " years old")
